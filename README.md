@@ -72,3 +72,17 @@ As root do:
 myql
 MariaDB [(none)]> GRANT ALL ON articles.* TO 'articles' IDENTIFIED BY 'db_password';
 ```
+
+# Using the app
+
+```bash
+$ mvn spring-boot:run
+```
+
+## Create a player
+
+```bash
+curl -i -H "Content-Type: application/json" -X POST \
+-d '{"title": "How to learn Spring framework", "content": "Resources to learn Spring framework"}' \
+http://localhost:8080/api/articles
+```
