@@ -79,7 +79,7 @@ MariaDB [(none)]> GRANT ALL ON articles.* TO 'articles' IDENTIFIED BY 'db_passwo
 $ mvn spring-boot:run
 ```
 
-## Create a player
+## Create an article
 
 ```bash
 curl -i -H "Content-Type: application/json" -X POST \
