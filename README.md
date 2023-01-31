@@ -58,17 +58,17 @@ $ mysql -u root -p
 Then do
 
 ```
-MariaDB [(none)]> CREATE user 'dbplayers' IDENTIFIED BY 'db_password';
+MariaDB [(none)]> CREATE user 'articles' IDENTIFIED BY 'db_password';
 Query OK, 0 rows affected (0.595 sec)
 ```
 
-db_password should be a secure password for the dbplayers user.
+db_password should be a secure password for the articles user.
 
-## Grant access to the dbplayers database
+## Grant access to the articles database
 
 As root do:
 
 ```
 myql
-MariaDB [(none)]> GRANT ALL ON dbplayers.* TO 'dbplayers' IDENTIFIED BY 'db_password';
+MariaDB [(none)]> GRANT ALL ON articles.* TO 'dbplayers' IDENTIFIED BY 'db_password';
 ```
