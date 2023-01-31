@@ -70,5 +70,5 @@ As root do:
 
 ```
 myql
-MariaDB [(none)]> GRANT ALL ON articles.* TO 'dbplayers' IDENTIFIED BY 'db_password';
+MariaDB [(none)]> GRANT ALL ON articles.* TO 'articles' IDENTIFIED BY 'db_password';
 ```
