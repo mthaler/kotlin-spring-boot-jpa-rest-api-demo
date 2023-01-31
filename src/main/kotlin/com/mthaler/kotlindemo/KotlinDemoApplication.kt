@@ -1,4 +1,4 @@
-package com.mthaler.kotlindemo.model.com.mthaler.kotlindemo
+package com.mthaler.kotlindemo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
