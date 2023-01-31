@@ -15,12 +15,12 @@ As root do:
 # apt-get install mariadb-client mariadb-server
 ```
 
-## Create dbplayers database
+## Create articles database
 
 As root do:
 
 ```bash
-# mysqladmin -u root -p create dbplayers
+# mysqladmin -u root -p create articles
 ```
 
 The password is empty
@@ -37,16 +37,16 @@ The password is empty
 MariaDB [(none)]> show databases;
 ```
 
-## Use dbplayers database
+## Use articles database
 
 ```
-MariaDB [(none)]> use dbplayers;
+MariaDB [(none)]> use articles;
 ```
 
 The following prompt should be showed after that:
 
 ```
-MariaDB [dbplayers]>
+MariaDB [articles]>
 ```
 
 ## Create user for the dbplayer database:
