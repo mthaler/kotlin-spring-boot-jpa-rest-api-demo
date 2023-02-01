@@ -49,7 +49,7 @@ The following prompt should be showed after that:
 MariaDB [articles]>
 ```
 
-## Create user for the dbplayer database:
+## Create user for the articles database:
 
 ```bash
 $ mysql -u root -p 
@@ -85,4 +85,10 @@ $ mvn spring-boot:run
 curl -i -H "Content-Type: application/json" -X POST \
 -d '{"title": "How to learn Spring framework", "content": "Resources to learn Spring framework"}' \
 http://localhost:8080/api/articles
+```
+
+## Get all articles
+
+```bash
+curl -i -H 'Accept: application/json' http://localhost:8080/api/articles
 ```
