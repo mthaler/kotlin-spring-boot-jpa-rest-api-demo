@@ -92,3 +92,23 @@ http://localhost:8080/api/articles
 ```bash
 curl -i -H 'Accept: application/json' http://localhost:8080/api/articles
 ```
+
+## Get article by id
+
+```bash
+curl -i -H 'Accept: application/json' http://localhost:8080/api/articles/1
+```
+
+## Update article
+
+```bash
+curl -i -H "Content-Type: application/json" -X PUT \
+-d '{"title": "Learning Spring Boot", "content": "Some resources to learn Spring Boot"}' \
+http://localhost:8080/api/articles/1
+```
+
+## Delete article
+
+```bash
+curl -i -X DELETE http://localhost:8080/api/articles/1
+```
